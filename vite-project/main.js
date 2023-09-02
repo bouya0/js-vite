@@ -7,4 +7,6 @@ import "@splidejs/splide/css/skyblue";
 import "@splidejs/splide/css/sea-green";
 import "@splidejs/splide/css/core";
 
-new Splide(".splide").mount();
+new Splide(".splide", {
+  type: "loop",
+}).mount();

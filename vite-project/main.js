@@ -1,4 +1,5 @@
 import "./style.css";
+import "./test.scss";
 
 // Splide
 import Splide from "@splidejs/splide";

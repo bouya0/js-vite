@@ -1,5 +1,14 @@
 import "./style.scss";
 import "./test.scss";
+import ActiveNav from './activeNav';
+
+//もしjs-navがDOMにあればActiveNavインスタンスを作成
+//コンストラクタにnavElementキーの値であるjs-nav（ID）を渡す
+if(document.getElementById('js-nav') !== null) {
+  new ActiveNav({
+    navElement: 'js-nav'
+  })
+}
 
 // Splide
 import Splide from "@splidejs/splide";

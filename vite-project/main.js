@@ -1,4 +1,5 @@
-import "./styles/main.scss";
+import "./style.scss";
+import "./test.scss";
 import ActiveNav from './activeNav';
 
 //もしjs-navがDOMにあればActiveNavインスタンスを作成

@@ -1,4 +1,11 @@
 import "./styles/main.scss";
+// Splide
+import "@splidejs/splide/css";
+import "@splidejs/splide/css/skyblue";
+import "@splidejs/splide/css/sea-green";
+import "@splidejs/splide/css/core";
+
+import Splide from "@splidejs/splide";
 import ActiveNav from './activeNav';
 
 //もしjs-navがDOMにあればActiveNavインスタンスを作成
@@ -9,13 +16,6 @@ if(document.getElementById('js-nav') !== null) {
   })
 }
 
-// Splide
-import Splide from "@splidejs/splide";
-import "@splidejs/splide/css";
-import "@splidejs/splide/css/skyblue";
-import "@splidejs/splide/css/sea-green";
-import "@splidejs/splide/css/core";
-
-new Splide(".splide", {
-  type: "loop",
-}).mount();
+if(document.getElementsByClassName('splide')[0]){
+	new Splide( '.splide' ).mount();
+}

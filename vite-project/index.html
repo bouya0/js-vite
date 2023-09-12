@@ -7,7 +7,16 @@
     <title>Vite App</title>
   </head>
   <body>
-    <section class="splide" aria-label="Splideの基本的なHTML">
+
+    <header class="header">
+      <nav class="nav" id="js-nav">
+        <a data-page="index" href="./index.html">TOP</a>
+        <a data-page="data-table" href="./data-table.html">DATA TABLE</a>
+        <a data-page="data-form" href="./data-form.html">DATA FORM</a>
+      </nav>
+    </header>
+
+    <section class="splide" aria-label="Splide Basic HTML Example">
       <div class="splide__track">
         <ul class="splide__list">
           <li class="splide__slide">Slide 01</li>
@@ -16,7 +25,14 @@
         </ul>
       </div>
     </section>
-    <div id="app"></div>
+
+    <div class="container">
+      <h1>Hello World</h1>
+      <p>Sample text here ... Sample text here ... Sample text here ... Sample text here ... Sample text here ... Sample text here ...</p>
+      <p>Sample text here ... Sample text here ... Sample text here ... Sample text here ... Sample text here ... Sample text here ...</p>
+      <p>Sample text here ... Sample text here ... Sample text here ... Sample text here ... Sample text here ... Sample text here ...</p>
+    </div>
+
     <script type="module" src="/main.js"></script>
   </body>
 </html>
